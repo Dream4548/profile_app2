@@ -1,0 +1,20 @@
+{"logTime": "0703/112519", "correlationVector":"c/dCqgoz+AnFWF+1J14U6t.1","action":"SyncServerConnectionManagerRequest", "result":"SYNC_SERVER_OK", "context":{"environment":"Prod_SoutheastAsia_000j", "migrationStage":"MigrationComplete", "server":"GENERAL0300001N"}}
+{"logTime": "0703/112520", "correlationVector":"WR7ZdsNUkQnlhHTcto7flq","action":"SyncServerConnectionManagerRequest", "result":"SYNC_SERVER_OK", "context":{"environment":"", "migrationStage":"", "server":""}}
+{"logTime": "0703/112520", "correlationVector":"c/dCqgoz+AnFWF+1J14U6t","action":"Initial GetUpdates", "result":"", "context":Reason: NEW_CLIENT. cV=c/dCqgoz+AnFWF+1J14U6t}
+{"logTime": "0703/112520", "correlationVector":"c/dCqgoz+AnFWF+1J14U6t.2","action":"GetUpdates Response", "result":"Success", "context":Received 1 update(s). cV=c/dCqgoz+AnFWF+1J14U6t.0;server=GENERAL0300001N;cloudType=Consumer;environment=Prod_SoutheastAsia_000j;migrationStage=MigrationComplete}
+{"logTime": "0703/112522", "correlationVector":"nbWcYdCBO7gHguoSAE836d","action":"Normal GetUpdate request", "result":"", "context":cV=nbWcYdCBO7gHguoSAE836d
+Refresh requested types: Encryption Keys}
+{"logTime": "0703/112522", "correlationVector":"nbWcYdCBO7gHguoSAE836d.1","action":"SyncServerConnectionManagerRequest", "result":"SYNC_SERVER_OK", "context":{"environment":"Prod_SoutheastAsia_000j", "migrationStage":"NotStarted", "server":"GENERAL0100000L"}}
+{"logTime": "0703/112522", "correlationVector":"nbWcYdCBO7gHguoSAE836d.2","action":"GetUpdates Response", "result":"Success", "context":Received 0 update(s). cV=nbWcYdCBO7gHguoSAE836d.0;server=GENERAL0100000L;cloudType=Consumer;environment=Prod_SoutheastAsia_000j;migrationStage=NotStarted}
+{"logTime": "0703/113016", "correlationVector":"+68K7rqD8dLPy+icrwz45D","action":"Normal GetUpdate request", "result":"", "context":cV=+68K7rqD8dLPy+icrwz45D
+Refresh requested types: Encryption Keys}
+{"logTime": "0703/113017", "correlationVector":"+68K7rqD8dLPy+icrwz45D.1","action":"SyncServerConnectionManagerRequest", "result":"SYNC_SERVER_OK", "context":{"environment":"Prod_SoutheastAsia_000j", "migrationStage":"NotStarted", "server":"GENERAL0300003F"}}
+{"logTime": "0703/113017", "correlationVector":"+68K7rqD8dLPy+icrwz45D.2","action":"GetUpdates Response", "result":"Success", "context":Received 0 update(s). cV=+68K7rqD8dLPy+icrwz45D.0;server=GENERAL0300003F;cloudType=Consumer;environment=Prod_SoutheastAsia_000j;migrationStage=NotStarted}
+{"logTime": "0703/113853", "correlationVector":"hL6PBaDU8YJufrk3bAsCKx.1","action":"SyncServerConnectionManagerRequest", "result":"SYNC_SERVER_OK", "context":{"environment":"Prod_SoutheastAsia_000j", "migrationStage":"MigrationComplete", "server":"GENERAL0300001O"}}
+{"logTime": "0703/113854", "correlationVector":"TC9kMreMesFzcJ5bwb30sv","action":"SyncServerConnectionManagerRequest", "result":"SYNC_SERVER_OK", "context":{"environment":"", "migrationStage":"", "server":""}}
+{"logTime": "0703/113854", "correlationVector":"hL6PBaDU8YJufrk3bAsCKx","action":"Initial GetUpdates", "result":"", "context":Reason: NEW_CLIENT. cV=hL6PBaDU8YJufrk3bAsCKx}
+{"logTime": "0703/113854", "correlationVector":"hL6PBaDU8YJufrk3bAsCKx.2","action":"GetUpdates Response", "result":"Success", "context":Received 1 update(s). cV=hL6PBaDU8YJufrk3bAsCKx.0;server=GENERAL0300001O;cloudType=Consumer;environment=Prod_SoutheastAsia_000j;migrationStage=MigrationComplete}
+{"logTime": "0703/113854", "correlationVector":"Q5m5SBQ2JzuxnijFauzWVK","action":"Normal GetUpdate request", "result":"", "context":cV=Q5m5SBQ2JzuxnijFauzWVK
+Refresh requested types: Encryption Keys}
+{"logTime": "0703/113854", "correlationVector":"Q5m5SBQ2JzuxnijFauzWVK.1","action":"SyncServerConnectionManagerRequest", "result":"SYNC_SERVER_OK", "context":{"environment":"Prod_SoutheastAsia_000j", "migrationStage":"NotStarted", "server":"GENERAL03000035"}}
+{"logTime": "0703/113854", "correlationVector":"Q5m5SBQ2JzuxnijFauzWVK.2","action":"GetUpdates Response", "result":"Success", "context":Received 0 update(s). cV=Q5m5SBQ2JzuxnijFauzWVK.0;server=GENERAL03000035;cloudType=Consumer;environment=Prod_SoutheastAsia_000j;migrationStage=NotStarted}
