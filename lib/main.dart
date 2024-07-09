@@ -52,13 +52,13 @@ class ProfilePage extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 32),
             child: Text(
-              'I climb every mountain and swim every ocean. Just will be with you and fix what I broken.... 🎵',
+              'ใช้ชีวิตชิวๆ กับเกมโปรด เพลงเพราะ และภาพวาดในจินตนาการ 🎮🎧🎨',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
             ),
           ),
           const SizedBox(height: 32),
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Column(
               children: [
@@ -71,9 +71,12 @@ class ProfilePage extends StatelessWidget {
                   title: Text('deemgamer123@gmail.com'),
                 ),
                 ListTile(
-                  leading: Icon(Icons.emoji_events, size: 36),
-                  title: Text('Winner'),
-                  subtitle: Text('Swimming Competition'),
+                  leading: Image.network(
+                    'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+                    width: 36,
+                    height: 36,
+                  ),
+                  title: Text('Dream4548'),
                 ),
               ],
             ),

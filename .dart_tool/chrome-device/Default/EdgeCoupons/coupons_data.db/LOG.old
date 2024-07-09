@@ -1,2 +1,3 @@
-2024/07/03-18:25:19.295 4ab4 Creating DB C:\Users\deemg\AppData\Local\Temp\flutter_tools.4fe87eaa\flutter_tools_chrome_device.7b0e3089\Default\EdgeCoupons/coupons_data.db since it was missing.
-2024/07/03-18:25:19.335 4ab4 Reusing MANIFEST C:\Users\deemg\AppData\Local\Temp\flutter_tools.4fe87eaa\flutter_tools_chrome_device.7b0e3089\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2024/07/03-18:38:49.433 449c Reusing MANIFEST C:\Users\deemg\AppData\Local\Temp\flutter_tools.f6974e96\flutter_tools_chrome_device.d84a4cc7\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2024/07/03-18:38:49.433 449c Recovering log #3
+2024/07/03-18:38:49.434 449c Reusing old log C:\Users\deemg\AppData\Local\Temp\flutter_tools.f6974e96\flutter_tools_chrome_device.d84a4cc7\Default\EdgeCoupons/coupons_data.db/000003.log 
