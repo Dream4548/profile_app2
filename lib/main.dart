@@ -1,3 +1,5 @@
+//import 'dart:nativewrappers/_internal/vm/lib/ffi_patch.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,15 +27,19 @@ class ProfilePage extends StatelessWidget {
         children: [
           Stack(
             children: [
-              Container(
-                width: 400,
-                height: 400,
-                decoration: const BoxDecoration(
-                  color: Colors.blue,
-                  image: DecorationImage(
-                    image: AssetImage(
-                        'lib/assets/images/dream.png'), // Background image URL
-                    fit: BoxFit.cover,
+              Padding(
+                padding: const EdgeInsets.only(
+                    top: 20.0), // เปลี่ยน 20.0 เป็นค่าที่คุณต้องการ
+                child: Container(
+                  width: 400,
+                  height: 400,
+                  decoration: const BoxDecoration(
+                    color: Colors.blue,
+                    image: DecorationImage(
+                      image: AssetImage(
+                          'lib/assets/images/dream.png'), // Background image URL
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),

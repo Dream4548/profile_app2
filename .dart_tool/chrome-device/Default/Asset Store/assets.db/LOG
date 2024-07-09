@@ -1,5 +1,4 @@
-2024/07/09-20:16:09.733 3964 Reusing MANIFEST C:\Users\deemg\AppData\Local\Temp\flutter_tools.458ac55d\flutter_tools_chrome_device.926e3e43\Default\Asset Store\assets.db/MANIFEST-000001
-2024/07/09-20:16:09.736 3964 Recovering log #7
-2024/07/09-20:16:09.738 3964 Level-0 table #9: started
-2024/07/09-20:16:09.747 3964 Level-0 table #9: 646767 bytes OK
-2024/07/09-20:16:09.753 3964 Delete type=0 #7
+2024/07/09-21:29:23.672 4a34 Reusing MANIFEST C:\Users\deemg\AppData\Local\Temp\flutter_tools.f5bf122\flutter_tools_chrome_device.26d47911\Default\Asset Store\assets.db/MANIFEST-000001
+2024/07/09-21:29:23.675 4a34 Recovering log #10
+2024/07/09-21:29:23.682 4a34 Reusing old log C:\Users\deemg\AppData\Local\Temp\flutter_tools.f5bf122\flutter_tools_chrome_device.26d47911\Default\Asset Store\assets.db/000010.log 
+2024/07/09-21:29:23.682 4a34 Delete type=0 #7
