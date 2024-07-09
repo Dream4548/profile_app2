@@ -34,7 +34,6 @@ class ProfilePage extends StatelessWidget {
                   width: 400,
                   height: 400,
                   decoration: const BoxDecoration(
-                    color: Colors.blue,
                     image: DecorationImage(
                       image: AssetImage(
                           'lib/assets/images/dream.png'), // Background image URL
