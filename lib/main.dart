@@ -1,5 +1,5 @@
 //import 'dart:nativewrappers/_internal/vm/lib/ffi_patch.dart';
-
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return const GetMaterialApp(
       home: ProfilePage(),
     );
   }
@@ -29,7 +29,7 @@ class ProfilePage extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(
-                    top: 20.0), // เปลี่ยน 20.0 เป็นค่าที่คุณต้องการ
+                    top: 5.0), // เปลี่ยน 20.0 เป็นค่าที่คุณต้องการ
                 child: Container(
                   width: 400,
                   height: 400,
@@ -64,14 +64,14 @@ class ProfilePage extends StatelessWidget {
           ),
           const SizedBox(height: 32),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Column(
               children: [
-                ListTile(
+                const ListTile(
                   leading: Icon(Icons.facebook, size: 36),
                   title: Text('Ratchanon Ketkaew'),
                 ),
-                ListTile(
+                const ListTile(
                   leading: Icon(Icons.email, size: 36),
                   title: Text('deemgamer123@gmail.com'),
                 ),
@@ -81,7 +81,12 @@ class ProfilePage extends StatelessWidget {
                     width: 36,
                     height: 36,
                   ),
-                  title: Text('Dream4548'),
+                  title: const Text('Dream4548'),
+                  
+                ),
+                ElevatedButton(
+                  onPressed: () { },
+                  child: Text('about me'),
                 ),
               ],
             ),
