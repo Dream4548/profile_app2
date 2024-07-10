@@ -1,6 +1,8 @@
 //import 'dart:nativewrappers/_internal/vm/lib/ffi_patch.dart';
+// ignore: depend_on_referenced_packages
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:profile_app/about.dart';
 
 void main() {
   runApp(const MyApp());
@@ -85,8 +87,10 @@ class ProfilePage extends StatelessWidget {
                   
                 ),
                 ElevatedButton(
-                  onPressed: () { },
-                  child: Text('about me'),
+                  onPressed: () {
+                    Get.to(const AboutApp());
+                  },
+                  child: const Text('about me'),
                 ),
               ],
             ),
