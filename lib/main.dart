@@ -3,6 +3,7 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:profile_app/about.dart';
+import 'package:profile_app/drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +26,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MyDrawer(),
       body: Column(
         children: [
           Stack(
@@ -84,7 +86,6 @@ class ProfilePage extends StatelessWidget {
                     height: 36,
                   ),
                   title: const Text('Dream4548'),
-                  
                 ),
                 ElevatedButton(
                   onPressed: () {

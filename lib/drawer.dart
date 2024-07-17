@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'about.dart'; // ตรวจสอบให้แน่ใจว่ามีการนำเข้าไฟล์ที่ถูกต้อง
+import 'grid.dart'; // ตรวจสอบให้แน่ใจว่ามีการนำเข้าไฟล์ที่ถูกต้อง
 
 void main() {
-  runApp(MyDrawer());
+  runApp(const MyDrawer());
 }
 
 class MyDrawer extends StatelessWidget {
+  const MyDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,27 +17,30 @@ class MyDrawer extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
-      routes: {
-        '/home': (context) => HomeScreen(),
-        '/about': (context) => AboutScreen(),
-      },
+      home: const HomeScreen(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Screen'),
+        title: const Text('Home Screen'),
       ),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
-            DrawerHeader(
+            const DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
@@ -45,38 +53,32 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.home),
-              title: Text('Home'),
+              leading: const Icon(Icons.home),
+              title: const Text('Home'),
               onTap: () {
-                Navigator.pushReplacementNamed(context, '/home');
+                // ใช้ Get.offAll เพื่อไปที่ HomeScreen
+                Get.offAll(() => const HomeScreen());
               },
             ),
             ListTile(
-              leading: Icon(Icons.info),
-              title: Text('About'),
+              leading: const Icon(Icons.info),
+              title: const Text('About'),
               onTap: () {
-                Navigator.pushReplacementNamed(context, '/about');
+                Get.to(() => const AboutApp());
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.grid_view),
+              title: const Text('Grid'),
+              onTap: () {
+                Get.to(() => const GridPage());
               },
             ),
           ],
         ),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Home Screen Content'),
-      ),
-    );
-  }
-}
-
-class AboutScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('About Screen'),
-      ),
-      body: Center(
-        child: Text('About Screen Content'),
       ),
     );
   }
