@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:get/get.dart';
+import 'package:getwidget/getwidget.dart';
+import 'package:profile_app/drawer.dart';
 import 'package:profile_app/main.dart';
 
 void main() {
@@ -34,17 +36,26 @@ class _ProfilePageState extends State<ProfilePage> {
       appBar: AppBar(
         title: const Text("My List"),
       ),
+      drawer: MyDrawer(),
       body: ListView.builder(
         itemCount: items.length,
-        prototypeItem: ListTile(
-          title: Text(items.first),
-        ),
         itemBuilder: (context, index) {
-          return ListTile(
-            leading: Icon(Icons.add),
-            title: Text(items[index]),
-            subtitle: const Text("RAT"),
-            trailing: const Icon(Icons.check),
+          return Padding(
+            padding: const EdgeInsets.symmetric(vertical: 4.0),
+            child: Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey), // เพิ่มเส้นขอบสีเทา
+                borderRadius:
+                    BorderRadius.circular(8.0), // เพิ่มมุมโค้งให้กับเส้นขอบ
+              ),
+              child: const GFListTile(
+                titleText: 'Title',
+                subTitleText: 'Ratchanon ketkeaw',
+                icon: Icon(Icons.favorite),
+                padding:
+                    EdgeInsets.all(8.0), // เพิ่ม padding เพื่อป้องกัน overflow
+              ),
+            ),
           );
         },
       ),

@@ -68,6 +68,12 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "getwidget",
+      "rootUri": "file:///C:/Users/Computer_SSKRU/AppData/Local/Pub/Cache/hosted/pub.dev/getwidget-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "leak_tracker",
       "rootUri": "file:///C:/Users/Computer_SSKRU/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.4",
       "packageUri": "lib/",
@@ -176,7 +182,7 @@
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-07-10T04:42:04.933513Z",
+  "generated": "2024-07-17T03:56:49.279648Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///C:/flutter",
