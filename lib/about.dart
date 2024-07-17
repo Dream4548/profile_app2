@@ -18,28 +18,35 @@ class AboutApp extends StatelessWidget {
   }
 }
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
+
+  @override
+  State<ProfilePage> createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  final List<String> items = List<String>.generate(100, (i) => 'dream $i');
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("About Page"),
+        title: const Text("My List"),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text("about meee"),
-            ElevatedButton(
-              onPressed: () {
-                Get.to(const MyApp());
-              },
-              child: const Text("Click Me"),
-            ),
-          ],
+      body: ListView.builder(
+        itemCount: items.length,
+        prototypeItem: ListTile(
+          title: Text(items.first),
         ),
+        itemBuilder: (context, index) {
+          return ListTile(
+            leading: Icon(Icons.add),
+            title: Text(items[index]),
+            subtitle: const Text("RAT"),
+            trailing: const Icon(Icons.check),
+          );
+        },
       ),
     );
   }
