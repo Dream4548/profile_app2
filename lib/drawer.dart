@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:profile_app/bottomsheet.dart';
+import 'package:profile_app/sheet_content.dart';
 import 'about.dart'; // ตรวจสอบให้แน่ใจว่ามีการนำเข้าไฟล์ที่ถูกต้อง
 import 'grid.dart'; // ตรวจสอบให้แน่ใจว่ามีการนำเข้าไฟล์ที่ถูกต้อง
 
@@ -72,6 +74,20 @@ class _HomeScreenState extends State<HomeScreen> {
               title: const Text('Grid'),
               onTap: () {
                 Get.to(() => const GridPage());
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.table_chart),
+              title: const Text('Sheet'),
+              onTap: () {
+                Get.to(() => const sheet_content());
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.table_chart),
+              title: const Text('bottomsheet'),
+              onTap: () {
+                Get.to(() => const BottomSheetExample());
               },
             ),
           ],
