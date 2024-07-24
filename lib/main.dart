@@ -1,7 +1,9 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:profile_app/grid.dart';
 import 'about.dart';
 import 'package:profile_app/drawer.dart';
+import 'bottomsheet.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +19,8 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(name: '/', page: () => const ProfilePage()),
         GetPage(name: '/about', page: () => const AboutApp()),
+        GetPage(name: '/grid', page: () => const GridPage()),
+        GetPage(name: '/bottomsheet', page: () => const BottomSheetExample()),
       ],
     );
   }

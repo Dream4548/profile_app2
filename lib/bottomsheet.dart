@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:profile_app/drawer.dart';
+import 'sheet_content.dart'; // import ไฟล์ sheetcontent
+
+void main() {
+  runApp(MaterialApp(
+    home: BottomSheetExample(),
+  ));
+}
 
 class BottomSheetExample extends StatelessWidget {
   const BottomSheetExample({super.key});
@@ -18,10 +25,9 @@ class BottomSheetExample extends StatelessWidget {
               context: context,
               builder: (BuildContext context) {
                 return Container(
-                  height: 200,
                   color: Colors.white,
-                  child: const Center(
-                    child: Text('Hello from the Bottom Sheet'),
+                  child: ListView(
+                    children: sheetContent, // ใช้ข้อมูลจาก sheetcontent
                   ),
                 );
               },
@@ -32,10 +38,4 @@ class BottomSheetExample extends StatelessWidget {
       ),
     );
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    home: BottomSheetExample(),
-  ));
 }

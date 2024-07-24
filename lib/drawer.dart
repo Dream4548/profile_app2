@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'about.dart';
 import 'package:profile_app/bottomsheet.dart';
-import 'package:profile_app/sheet_content.dart';
 import 'package:profile_app/grid.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -68,7 +66,18 @@ class MyDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.info),
+            leading: const Icon(Icons.grid_view),
+            title: const Text(
+              'GridPage',
+              style: TextStyle(fontSize: 18),
+            ),
+            onTap: () {
+              Get.to(() =>
+                  const GridPage()); // เปลี่ยนจาก Get.to(() => AboutApp());
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.description),
             title: const Text(
               'bottomsheet',
               style: TextStyle(fontSize: 18),
