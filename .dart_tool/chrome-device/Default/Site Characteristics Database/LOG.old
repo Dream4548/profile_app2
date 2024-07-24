@@ -1,8 +1,19 @@
-2024/07/24-10:55:39.959 17bc Reusing MANIFEST C:\Users\COMPUT~1\AppData\Local\Temp\flutter_tools.52ea4e51\flutter_tools_chrome_device.87e951f1\Default\Site Characteristics Database/MANIFEST-000001
-2024/07/24-10:55:39.960 17bc Recovering log #10
-2024/07/24-10:55:39.960 17bc Reusing old log C:\Users\COMPUT~1\AppData\Local\Temp\flutter_tools.52ea4e51\flutter_tools_chrome_device.87e951f1\Default\Site Characteristics Database/000010.log 
-2024/07/24-10:55:39.960 17bc Delete type=0 #3
-2024/07/24-10:55:39.960 17bc Delete type=2 #4
-2024/07/24-10:55:39.961 17bc Delete type=2 #6
-2024/07/24-10:55:39.961 17bc Delete type=0 #6
-2024/07/24-10:55:39.961 17bc Delete type=2 #7
+2024/07/24-17:49:42.797 e98 Reusing MANIFEST C:\Users\deemg\AppData\Local\Temp\flutter_tools.cdd3e735\flutter_tools_chrome_device.19751d1c\Default\Site Characteristics Database/MANIFEST-000001
+2024/07/24-17:49:42.798 e98 Recovering log #3
+2024/07/24-17:49:42.799 e98 Level-0 table #12: started
+2024/07/24-17:49:42.803 e98 Level-0 table #12: 130 bytes OK
+2024/07/24-17:49:42.803 e98 Recovering log #6
+2024/07/24-17:49:42.803 e98 Level-0 table #13: started
+2024/07/24-17:49:42.809 e98 Level-0 table #13: 275 bytes OK
+2024/07/24-17:49:42.809 e98 Recovering log #10
+2024/07/24-17:49:42.810 e98 Reusing old log C:\Users\deemg\AppData\Local\Temp\flutter_tools.cdd3e735\flutter_tools_chrome_device.19751d1c\Default\Site Characteristics Database/000010.log 
+2024/07/24-17:49:42.814 e98 Delete type=0 #3
+2024/07/24-17:49:42.815 e98 Delete type=0 #6
+2024/07/24-17:49:42.816 e98 Compacting 4@0 + 0@1 files
+2024/07/24-17:49:42.820 e98 Generated table #14@0: 1 keys, 130 bytes
+2024/07/24-17:49:42.820 e98 Compacted 4@0 + 0@1 files => 130 bytes
+2024/07/24-17:49:42.823 e98 compacted to: files[ 1 2 0 0 0 0 0 ]
+2024/07/24-17:49:42.824 e98 Delete type=2 #4
+2024/07/24-17:49:42.824 e98 Delete type=2 #6
+2024/07/24-17:49:42.825 e98 Delete type=2 #7
+2024/07/24-17:49:42.825 e98 Delete type=2 #12

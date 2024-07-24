@@ -1,110 +1,84 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:profile_app/bottomsheet.dart';
-import 'package:profile_app/main.dart';
-import 'package:profile_app/sheet_content.dart';
 import 'about.dart';
-import 'grid.dart';
-
-void main() {
-  runApp(const MyDrawer());
-}
+import 'package:profile_app/bottomsheet.dart';
+import 'package:profile_app/sheet_content.dart';
+import 'package:profile_app/grid.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Drawer Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
-
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Screen'),
-      ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-              child: Text(
-                'Drawer Header',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
+    return Drawer(
+      child: Column(
+        children: <Widget>[
+          Container(
+            width: double.infinity,
+            padding: EdgeInsets.all(20),
+            color: Theme.of(context).primaryColor,
+            child: Center(
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    width: 100,
+                    height: 100,
+                    margin: EdgeInsets.only(
+                      top: 30,
+                    ),
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          image: NetworkImage(
+                            'https://cdn.discordapp.com/attachments/1244279513924374581/1265624751070642186/whoever-designed-changli-thank-you-v0-t4e7ewov4b9d1.png?ex=66a23066&is=66a0dee6&hm=f2006084d64849c920a342fabab93cb8e135170ba449ec1769261a4282fb6471&',
+                          ),
+                          fit: BoxFit.fill),
+                    ),
+                  ),
+                  const Text(
+                    'Ratchanon ketkaew',
+                    style: TextStyle(fontSize: 22, color: Colors.white),
+                  ),
+                  const Text(
+                    'deemgamer123@gmail.com',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ],
               ),
             ),
-            ListTile(
-              leading: const Icon(Icons.home),
-              title: const Text('Home'),
-              onTap: () {
-                // ปิด Drawer ก่อนที่จะเปลี่ยนหน้า
-                Navigator.of(context).pop();
-                Get.offAll(() => const MyApp());
-              },
+          ),
+          ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text(
+              'Home',
+              style: TextStyle(fontSize: 18),
             ),
-            ListTile(
-              leading: const Icon(Icons.info),
-              title: const Text('About'),
-              onTap: () {
-                // ปิด Drawer ก่อนที่จะเปลี่ยนหน้า
-                Navigator.of(context).pop();
-                Get.to(() => const AboutApp());
-              },
+            onTap: () {
+              Get.toNamed('/'); // เปลี่ยนจาก Get.to(() => MyApp());
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.info),
+            title: const Text(
+              'About',
+              style: TextStyle(fontSize: 18),
             ),
-            ListTile(
-              leading: const Icon(Icons.grid_view),
-              title: const Text('Grid'),
-              onTap: () {
-                // ปิด Drawer ก่อนที่จะเปลี่ยนหน้า
-                Navigator.of(context).pop();
-                Get.to(() => const GridPage());
-              },
+            onTap: () {
+              Get.toNamed('/about'); // เปลี่ยนจาก Get.to(() => AboutApp());
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.info),
+            title: const Text(
+              'bottomsheet',
+              style: TextStyle(fontSize: 18),
             ),
-            ListTile(
-              leading: const Icon(Icons.table_chart),
-              title: const Text('Sheet'),
-              onTap: () {
-                // ปิด Drawer ก่อนที่จะเปลี่ยนหน้า
-                Navigator.of(context).pop();
-                Get.to(() => const sheet_content());
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.table_chart),
-              title: const Text('Bottomsheet'),
-              onTap: () {
-                // ปิด Drawer ก่อนที่จะเปลี่ยนหน้า
-                Navigator.of(context).pop();
-                Get.to(() => const BottomSheetExample());
-              },
-            ),
-          ],
-        ),
-      ),
-      body: const Center(
-        child: Text('Home Screen Content'),
+            onTap: () {
+              Get.to(() =>
+                  const BottomSheetExample()); // เปลี่ยนจาก Get.to(() => AboutApp());
+            },
+          ),
+        ],
       ),
     );
   }

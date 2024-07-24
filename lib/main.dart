@@ -1,8 +1,6 @@
-//import 'dart:nativewrappers/_internal/vm/lib/ffi_patch.dart';
-// ignore: depend_on_referenced_packages
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import 'package:profile_app/about.dart';
+import 'about.dart';
 import 'package:profile_app/drawer.dart';
 
 void main() {
@@ -14,8 +12,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
-      home: ProfilePage(),
+    return GetMaterialApp(
+      home: const ProfilePage(),
+      getPages: [
+        GetPage(name: '/', page: () => const ProfilePage()),
+        GetPage(name: '/about', page: () => const AboutApp()),
+      ],
     );
   }
 }
@@ -26,21 +28,22 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MyDrawer(),
+      appBar: AppBar(
+        title: const Text('Ratchanon'),
+      ),
+      drawer: const MyDrawer(),
       body: Column(
         children: [
           Stack(
             children: [
               Padding(
-                padding: const EdgeInsets.only(
-                    top: 5.0), // เปลี่ยน 20.0 เป็นค่าที่คุณต้องการ
+                padding: const EdgeInsets.only(top: 5.0),
                 child: Container(
                   width: 400,
                   height: 400,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(
-                          'lib/assets/images/dream.png'), // Background image URL
+                      image: AssetImage('lib/assets/images/dream.png'),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -89,7 +92,7 @@ class ProfilePage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Get.to(const AboutApp());
+                    Get.toNamed('/about');
                   },
                   child: const Text('about me'),
                 ),
